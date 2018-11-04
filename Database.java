@@ -18,9 +18,9 @@ public class Database {
 		System.out.println("** 	Menu  **"); 
 		System.out.println("1. Set a field"); // Field
 		System.out.println("2. Set data ");	   //takeData
-		System.out.println("3.  Print data"); //showData
-		System.out.println("4.  Delete data");//deleteData
-		System.out.print("5.  Change data"); // changeData
+		System.out.println("3. Print data"); //showData
+		System.out.println("4. Delete data");//deleteData
+		System.out.println("5. Change data"); // changeData
 		
 
 		int choice = input.nextInt();
