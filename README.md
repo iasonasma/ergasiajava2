@@ -1,4 +1,4 @@
-# ergasiajava2
+# Project 2 JAVA Database
 ------------------------------Our Java 2 Project--------------------------
 
 
