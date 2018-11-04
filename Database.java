@@ -6,14 +6,14 @@ import java.util.*;
 
 
 public class Database {
-	Scanner input = new Scanner(System.in);
-	ArrayList<String> alist=new ArrayList<String>();
+	public static Scanner input = new Scanner(System.in);
+	public static ArrayList<Field> alist=new ArrayList<Field>();
 	
 	public static void main(String[] args) {
 
 	}
 
-	public void menu() {
+	public static void menu() {
 		System.out.println("Welcome");
 		System.out.println("** 	Menu  **"); 
 		System.out.println("1. Set a field"); // Field
