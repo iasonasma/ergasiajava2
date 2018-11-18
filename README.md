@@ -20,3 +20,5 @@ iasonasma -> διαγραφη του Field.java για επαναδημιουρ�
 ---18/11/2018---
 nefeli-v -> Add code to choice 4 on Database.java
             New class: DeleteData.java
+---19/11/2018---
+stef-06 -> ανανέωση database.java και δημιουργία νεας κλασης Datas με τις μεθόδους printData και fillTheData.
