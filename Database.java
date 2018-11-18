@@ -32,7 +32,7 @@ public class Database {
 		} else if (choice == 3) {
 			Datas.printData();
 		} else if (choice == 4) {
-
+			DeleteData.deleteData();
 		} else if (choice == 5) {
 			ChangeData.changeData();
 		}
