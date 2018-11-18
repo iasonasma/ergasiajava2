@@ -11,3 +11,7 @@ iasonasma -> Δημιουργία Field.java
 
 ---16/11/2018---
 nefeli-v -> Χρήση maps αντι λίστας
+
+---18/11/2018---
+iasonasma -> διαγραφη Field.java 
+Αλλαγη στην προσθηκη Datas μεσω HashMap
