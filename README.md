@@ -16,3 +16,7 @@ nefeli-v -> Χρήση maps αντι λίστας
 iasonasma -> αλλαγή στο Fields.java
 Αλλαγη στην προσθηκη Datas μεσω HashMap
 Δημιουργία CreateData.java για προσθήκη δεδομένων
+
+---18/11/2018---
+nefeli-v -> Add code to choice 4 on Database.java
+            New class: DeleteData.java
