@@ -25,3 +25,5 @@ nefeli-v -> Add code to choice 4 on Database.java
 stef-06 -> ανανέωση database.java και δημιουργία νεας κλασης Datas με τις μεθόδους printData και fillTheData.
 sindy-98 -> Add code to choice 5 on Database.java in order to change values in the data
             New class formed : ChangeData.java
+---19/11/2018---
+Aggeliki92 -> δημιουργία κλάσης Fields με την μέθοδο createField(). 
