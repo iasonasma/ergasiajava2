@@ -11,20 +11,10 @@ public class DeleteData {
 		System.out.println("Do you want to delete an ID or just a field? ");
 		String choice = input.next();
 		if (choice.equals("ID")) {
-			System.out.println("Give the value of the ID you want to delete: ");
-			Integer id = input.nextInt();
-			List<String> name = CreateData.values.remove(id);
-			
-			// check if we are able to remove the key
-			if(name==null){
-				System.out.println("Id:"+id+" not found");
-			}
-			else{
-				System.out.println("\nRemoving id:" + id + ","
-						+ name);
-			}
-			
-			System.out.println("ID deleted.");
+				System.out.println("Give the value of the ID you want to delete: ");
+				Integer id = input.nextInt();
+				CreateData.values.remove(id);
+				System.out.println("ID deleted.");
 		} else {
 			System.out.println("Give me the ID of the form you want to delete: ");
 			int delete = input.nextInt();
