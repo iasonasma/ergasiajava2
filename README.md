@@ -27,3 +27,6 @@ sindy-98 -> Add code to choice 5 on Database.java in order to change values in t
             New class formed : ChangeData.java
 ---19/11/2018---
 Aggeliki92 -> δημιουργία κλάσης Fields με την μέθοδο createField(). 
+
+---20/11/2018---
+iasonasma -> αλλαγη στο Delete.java για την διορθωση προβλήματος NULL
