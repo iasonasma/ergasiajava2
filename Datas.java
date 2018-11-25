@@ -11,11 +11,11 @@ public class Datas {
 
 		}
 		System.out.println();
-		for (int i = 0; i < CreateData.values.size(); i++) {
-			System.out.print("ID:" + i + " ");
-			System.out.print(CreateData.values.get(i));
-			System.out.println();
-		}
+	        CreateData.values.forEach((key,value) -> {
+		System.out.print("ID:" + key + "->");
+		System.out.print(value);
+		System.out.println();
+                });
 		System.out.println();
 
 		Database.menu();
