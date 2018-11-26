@@ -38,6 +38,7 @@ public class DeleteData {
 			CreateData.values.replace(i,CreateData.values.get(i),CreateData.values.get(i+1));
 			}
 			CreateData.values.remove(size -1 );
+			CreateData.counter--;
 			System.out.println("ID deleted.");
 			Database.menu();
 		} else {
