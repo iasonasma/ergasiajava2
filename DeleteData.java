@@ -52,22 +52,14 @@ public class DeleteData {
 	public static void deleteField() {
 		System.out.println("Give me the ID of the form you want to delete: ");
 		int delete = input.nextInt();
-		int i = 0 ;
 		System.out.println("Which field do you want to delete? ");
 		int index = 0;
 		String deletefield = input.next();
-		      for (Iterator<String> iterator = Fields.fields.iterator(); iterator.hasNext();) {
-				String num = iterator.next();
-				if ((Fields.fields.get(i).equals(deletefield))) {
-					index = i;
-				}
-				i++;
+		for (int i = 0; i < Fields.fields.size(); i++) {
+			if ((Fields.fields.get(i).equals(deletefield))) {
+				index = i;
 			}
-		if (index == 0) {
-			System.out.println("Wrong field name.Please try again");
-			deleteField();
 		}
-
 		List<String> test = new ArrayList<String>();
 		test.addAll(CreateData.values.get(delete));
 		test.set(index, "-");
