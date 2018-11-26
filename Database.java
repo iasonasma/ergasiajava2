@@ -35,7 +35,12 @@ public class Database {
 			DeleteData.deleteData();
 		} else if (choice == 5) {
 			ChangeData.changeData();
+		} else {
+			System.out.println("Wrong choice.Please try again");
+			menu();
+
 		}
+
 
 	}
 }
