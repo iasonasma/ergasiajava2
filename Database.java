@@ -11,9 +11,9 @@ public class Database {
 	public static void menu() {
 		System.out.println("--** Welcome **--");
 		System.out.println("  ** Menu ** ");
-		System.out.println("1. Set a field");
-		System.out.println("2. Set data ");
-		System.out.println("3. Print data");
+		System.out.println("1. Set attributes names");
+		System.out.println("2. Insert data values ");
+		System.out.println("3. Print database");
 		System.out.println("4. Delete data");
 		System.out.print("5. Change data");
 		System.out.println();
