@@ -35,4 +35,8 @@ iasonasma -> αλλαγη στο Delete.java για την διορθωση πρ
 stef-06 -> Update DeleteData.java (δημιουργία ξεχωριστών μεθόδων , έλεγχος για τα input του χρήστη (px αν υπάρχει το field που θέλει να διαγράψει) και αλλαγή των id  όταν διαγράφεται ένα id.) 
            και Update Database.java (αλλαγή στο μενού.Αν ο χρήστης δεν επιλέξει από το 1-5 τον ενημερώνει και του ζητάει να ξαναπροσπαθήσει.)
 
-nefeli-v -> update deleteid method of DeleteData class (change counter when an ID is deleted)
+nefeli-v -> update deleteid method of DeleteData class (change counter when an ID is delete
+
+
+--29/11/2018--
+sindy-98 -> create new operation in class DeleteData in order to delete all the datas that existed in the database. The new method is : deleteDatabase().
