@@ -9,12 +9,14 @@ public class DeleteData {
 	static Scanner input = new Scanner(System.in);
 
 	public static void deleteData() {
-		System.out.println("Do you want to delete an ID or just a field? ");
+		System.out.println("Do you want to delete an ID  a field or database? ");
 		String choice = input.next();
 		if ((choice.equals("ID")) || (choice.equals("id"))) {
 			deleteId();
 		} else if (choice.equals("field")) {
 			deleteField();
+		} else if (choice.equals("database")) {
+			deleteDatabase();	
 		} else {
 			System.out.println("Please try again ");
 			deleteData();
@@ -68,5 +70,11 @@ public class DeleteData {
 		Database.menu();
 
 	}
-
+	public static void deleteDatabase() {
+		CreateData.values.clear();
+		System.out.println("The whole database is now deleted");
+		System.out.println("The only thing left are your attribute names: ");
+		Datas.printData();
+		Database.menu();
+	}
 }
