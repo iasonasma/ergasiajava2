@@ -41,3 +41,6 @@ nefeli-v -> update deleteid method of DeleteData class (change counter when an I
 --29/11/2018--
 sindy-98 -> create new operation in class DeleteData in order to delete all the datas that existed in the database. The new method is : deleteDatabase().
 sindy-98-> update the choices in DeleteData Class and changed the main menu a little bit.
+
+---1/12/2018---
+nefeli-v -> Add InputMismatchException in menu() method of Database class in case the user doesn't give an Integer
