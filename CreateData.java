@@ -19,15 +19,20 @@ public class CreateData {
 		int n = Fields.fields.size();
 		int i = 0;
 		List<String> valuedata = new ArrayList<String>();
-		while (i < n) {
-			System.out.println("Give me value for : " + Fields.fields.get(i));
-			String data = input.next();
-			valuedata.add(data);
-			i++;
-		}
+		if (!Fields.fields.isEmpty()) {
 
-		values.put(counter, valuedata);
-		counter++;
+			while (i < n) {
+				System.out.println("Give me value for : " + Fields.fields.get(i));
+				String data = input.next();
+				valuedata.add(data);
+				i++;
+			}
+
+			values.put(counter, valuedata);
+			counter++;
+		} else {
+			System.out.println("There are no fields in order to add data");
+		}
 		Database.menu();
 	}
 
