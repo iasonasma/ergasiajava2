@@ -44,3 +44,5 @@ sindy-98-> update the choices in DeleteData Class and changed the main menu a li
 
 ---1/12/2018---
 nefeli-v -> Add InputMismatchException in menu() method of Database class in case the user doesn't give an Integer
+            Add InputMismatchException in DeleteData, ChangeData classes
+            Update DeleteData,ChangeData, Datas, CreateData (checking if there are any data to delete/change/print, and if there are any             fields in order to add data to them)
