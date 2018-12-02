@@ -48,3 +48,4 @@ nefeli-v -> Add InputMismatchException in menu() method of Database class in cas
             Update DeleteData,ChangeData, Datas, CreateData (checking if there are any data to delete/change/print, and if there are any             fields in order to add data to them)
  ---2/12/2018---
 Aggeliki92 -> Update Database.java (ο χρήστης μπορεί να κάνει αναζάτηση δεδομένων χρησιμοποιώντας το primary key).
+Aggeliki92 -> Δημιουργία κλάσης SearchDatas με την μέθοδο searchDatas() που ζητάει από τον χρήστη το primary key και επιστρέφει την αντίστοιχη πλειάδα.
