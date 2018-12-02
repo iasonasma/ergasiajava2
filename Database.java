@@ -17,7 +17,8 @@ public class Database {
 			System.out.println("2. Set data ");
 			System.out.println("3. Print data");
 			System.out.println("4. Delete data");
-			System.out.print("5. Change data");
+			System.out.println("5. Change data");
+			System.out.print("6. Search data");
 			System.out.println();
 
 			Scanner input = new Scanner(System.in);
@@ -36,8 +37,12 @@ public class Database {
 
 			} else if (choice == 4) {
 				DeleteData.deleteData();
+				
 			} else if (choice == 5) {
 				ChangeData.changeData();
+			
+			} else if (choice == 6) {
+				SearchDatas.searchDatas();
 
 			} else {
 				System.out.println("Wrong choice.Please try again");
