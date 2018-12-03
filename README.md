@@ -49,3 +49,5 @@ nefeli-v -> Add InputMismatchException in menu() method of Database class in cas
  ---2/12/2018---
 Aggeliki92 -> Update Database.java (ο χρήστης μπορεί να κάνει αναζάτηση δεδομένων χρησιμοποιώντας το primary key).
 Aggeliki92 -> Δημιουργία κλάσης SearchDatas με την μέθοδο searchDatas() που ζητάει από τον χρήστη το primary key και επιστρέφει την αντίστοιχη πλειάδα.
+---3/12/2018---
+Aggeliki92 ->Διόρθωση κώδικα στην κλάση SearchDatas.
