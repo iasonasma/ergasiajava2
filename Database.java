@@ -4,11 +4,25 @@ import java.util.Scanner;
 import java.util.InputMismatchException;
 
 public class Database {
-
+	public  static Scanner input = new Scanner(System.in);
 	public static void main(String[] args) {
-		menu();
+		load();
 	}
-
+		public static void load()
+	{
+		System.out.println("Do you want to upload fields?");
+		String inputs = input.nextLine();
+		if(inputs.equals("yes"))
+			{
+			Write.writes();
+			menu();
+		}
+		else
+		{
+			Database.menu();
+		}
+	}
+	
 	public static void menu() {
 		try {
 			System.out.println("--** Welcome **--");
@@ -21,7 +35,7 @@ public class Database {
 			System.out.print("6. Search data");
 			System.out.println();
 
-			Scanner input = new Scanner(System.in);
+			
 
 			int choice = input.nextInt();
 			input.nextLine();
