@@ -32,7 +32,9 @@ public class Database {
 			System.out.println("3. Print data");
 			System.out.println("4. Delete data");
 			System.out.println("5. Change data");
-			System.out.print("6. Search data");
+			System.out.println("6. Search data");
+			System.out.print("7.Save data");
+
 			System.out.println();
 
 			
@@ -58,7 +60,10 @@ public class Database {
 			} else if (choice == 6) {
 				SearchDatas.searchDatas();
 
-			} else {
+			} else if (choice == 7) {
+				Write.writedata();
+				
+			}else {
 				System.out.println("Wrong choice.Please try again");
 				menu();
 			}
