@@ -70,5 +70,6 @@ try {
 			 });
 		      pr.close();
 		  }catch(Exception e){System.err.println(e);};
+		  Database.menu();
 }
 }
