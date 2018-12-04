@@ -13,12 +13,10 @@ public class SearchDatas {
 			
 			for(int i = 0; i < CreateData.values.size(); i++) {
 				if(i == id) {
-					System.out.print("The value is:" + CreateData.values.get(i));
+					System.out.println("The value is:" + CreateData.values.get(i));
 				}
 			}
-			System.out.println();
 		}
-	System.out.println();
 	Database.menu();
 	}
 }
