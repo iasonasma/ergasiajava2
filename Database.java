@@ -69,7 +69,7 @@ public class Database {
 			}
 		} catch (InputMismatchException e) {
 			System.err.println("Please insert an integer: ");
-			
+			input.next();
 		}
 		menu();
 
