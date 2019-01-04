@@ -69,3 +69,6 @@ Aggeliki92 -> Δημιουργία κλάσης SearchValue.java με την μ�
 Aggeliki92 -> Update Database.java (ο χρήστης μπορεί να κάνει αναζάτηση δεδομένων μέσω μιας τιμής).
 Aggeliki92 -> Διόρθωση κώδικα SearchValue.java ώστε να επιστρέφει και το primary key.
 Aggeliki92 -> Διόρθωση κώδικα SearchData.java για μετατροπή του ID.
+iasonasma -> αλλαγη Database ωστε να βλεπει αν υπαρχει το αρχειο datas.txt και αλλαγη στον κωδικα SearchValue για να μπορει να λειτουργησει με String στοιχεια.
+
+
