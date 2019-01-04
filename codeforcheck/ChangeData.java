@@ -14,14 +14,9 @@ public class ChangeData {
 			try {
 
 				String form = input.next();
-				int done = 0;
-
-				//for (int i = 0; i < CreateData.values.size(); i++) {
-					if (CreateData.values.containsKey(form)) {
-						done = 1;
-					}
-				//}
-				if (done == 1) {
+				
+				if (CreateData.values.containsKey(form)) {
+				
 					System.out.println("Which field do you want to change?");
 					int index = 0;
 					String formfield = input.next();
