@@ -33,7 +33,8 @@ public class Database {
 			System.out.println("4. Delete data");
 			System.out.println("5. Change data");
 			System.out.println("6. Search data");
-			System.out.print("7.Save data");
+			System.out.println("7. Search data");
+			System.out.print("8.Save data");
 
 			System.out.println();
 
@@ -59,8 +60,11 @@ public class Database {
 			
 			} else if (choice == 6) {
 				SearchDatas.searchDatas();
-
+				
 			} else if (choice == 7) {
+				SearchValue.searchValue();
+
+			} else if (choice == 8) {
 				Write.writedata();
 				
 			}else {
