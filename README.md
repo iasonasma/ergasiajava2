@@ -68,3 +68,4 @@ iasonasma -> Αλλαγη στον κωδικα Write.java για να επαν�
 Aggeliki92 -> Δημιουργία κλάσης SearchValue.java με την μέθοδο searchValue(). Ο χρήστης ζητάει μια τιμή και η βάση του επιστρέφει όλες τις πλειάδες στις οποίες υπάρχει αυτή η τιμή.
 Aggeliki92 -> Update Database.java (ο χρήστης μπορεί να κάνει αναζάτηση δεδομένων μέσω μιας τιμής).
 Aggeliki92 -> Διόρθωση κώδικα SearchValue.java ώστε να επιστρέφει και το primary key.
+Aggeliki92 -> Διόρθωση κώδικα SearchData.java για μετατροπή του ID.
