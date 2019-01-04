@@ -3,12 +3,20 @@ package database;
 
 import java.util.Scanner;
 import java.util.InputMismatchException;
-
+import java.io.File;
 public class Database {
 	public  static Scanner input = new Scanner(System.in);
 	public static void main(String[] args) {
-		load();
+
+		File f = new File("datas.txt");
+		if(f.exists() && !f.isDirectory()) {
+		    load();
+		}
+		else
+			menu();
 	}
+
+
 		public static void load()
 	{
 		System.out.println("Do you want to upload fields?");
@@ -89,3 +97,4 @@ public class Database {
 
 	}
 }
+
