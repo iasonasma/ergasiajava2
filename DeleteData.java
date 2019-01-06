@@ -10,7 +10,7 @@ public class DeleteData {
 	static Scanner input = new Scanner(System.in);
 
 	public static void deleteData() {
-		if (!CreateData.values.isEmpty()) {
+		if (! CreateData.getValues().isEmpty()) {
 			System.out.println("Do you want to delete an ID  a field or database? ");
 			String choice = input.next();
 			if ((choice.equals("ID")) || (choice.equals("id"))) {
@@ -36,18 +36,18 @@ public class DeleteData {
 		try {
 			Integer id = input.nextInt();
 			int done = 0;
-			int size = CreateData.values.size();
-			for (int i = 0; i < CreateData.values.size(); i++) {
+			int size =  CreateData.getValues().size();
+			for (int i = 0; i <  CreateData.getValues().size(); i++) {
 				if (i == id) {
 					done = 1;
 				}
 			}
 			if (done == 1) {
-				for (int i = id; i < CreateData.values.size() - 1; i++) {
-					CreateData.values.replace(i, CreateData.values.get(i), CreateData.values.get(i + 1));
+				for (int i = id; i <  CreateData.getValues().size() - 1; i++) {
+					 CreateData.getValues().replace(i,  CreateData.getValues().get(i),  CreateData.getValues().get(i + 1));
 				}
-				CreateData.values.remove(size - 1);
-				CreateData.counter--;
+				 CreateData.getValues().remove(size - 1);
+				CreateData.setCounter(CreateData.getCounter()-1);
 				System.out.println("ID deleted.");
 				Database.menu();
 			} else {
@@ -65,7 +65,7 @@ public class DeleteData {
 		try {
 			int delete = input.nextInt();
 			int done = 0;
-			for (int i = 0; i < CreateData.values.size(); i++) {
+			for (int i = 0; i <  CreateData.getValues().size(); i++) {
 				if (i == delete) {
 					done = 1;
 				}
@@ -75,9 +75,9 @@ public class DeleteData {
 				System.out.println("Which field do you want to delete? ");
 				int index = -1;
 				String deletefield = input.next();
-				for (Iterator<String> iterator = Fields.fields.iterator(); iterator.hasNext();) {
+				for (Iterator<String> iterator = Fields.getFields().iterator(); iterator.hasNext();) {
 					String num = iterator.next();
-					if ((Fields.fields.get(i).equals(deletefield))) {
+					if ((Fields.getFields().get(i).equals(deletefield))) {
 						index = i;
 					}
 					i++;
@@ -88,9 +88,9 @@ public class DeleteData {
 				}
 
 				List<String> test = new ArrayList<String>();
-				test.addAll(CreateData.values.get(delete));
+				test.addAll( CreateData.getValues().get(delete));
 				test.set(index, "-");
-				CreateData.values.put(delete, test);
+				 CreateData.getValues().put(delete, test);
 				System.out.println("Field deleted");
 				Database.menu();
 			} else {
@@ -103,7 +103,7 @@ public class DeleteData {
 	}
 
 	public static void deleteDatabase() {
-		CreateData.values.clear();
+		 CreateData.getValues().clear();
 		System.out.println("The whole database is now deleted");
 		System.out.println("The only thing left are your attribute names: ");
 		Datas.printData();
@@ -111,3 +111,4 @@ public class DeleteData {
 	}
 
 }
+
