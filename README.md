@@ -78,3 +78,6 @@ Create package-info.java που περιέρχει πληροφοριες για
 
 -> iasonasma -> καποιες μικρο αλλαγες στο DeleteData για να λειτουργει με τους getters
 
+-> nefeli-v -> Class SearchValue: add code on if...else block in case the value doesn't exist.
+               Class SearchDatas: add InputMismatchException
+
