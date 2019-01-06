@@ -2,7 +2,7 @@ package database;
 
 import java.util.Scanner;
 import java.util.InputMismatchException;
-
+import java.io.File;
 /**
  * class Database.
  * provides the main method
@@ -14,17 +14,21 @@ public class Database {
      * wants to upload
      * existing fields
      */
-    private static void load() {
-        Scanner input = new Scanner(System.in);
 
-        System.out.println("Do you want to upload fields?");
+    static  Scanner input = new Scanner(System.in);
+
+    private static void load() {
         String inputs = input.nextLine();
         if (inputs.equals("yes")) {
             Write.writes();
             menu();
-        } else {
+        } else if(inputs.equals("no")){
             menu();
-        }
+        }else {
+			System.out.println("Please answer with a yes or a no");
+			load();
+			input.next();
+		}
     }
 
     /**
@@ -32,15 +36,22 @@ public class Database {
      *
      * @param args
      */
-    public static void main(String[] args) {
-        load();
-    }
+	public static void main(String[] args) {
+
+		File f = new File("datas.txt");
+		if(f.exists() && !f.isDirectory()) {
+			System.out.println("A Database has been found.Wanna to upload?");
+		    load();
+		}
+		else
+			menu();
+	}
+
 
     /**
      * provides the menu.
      */
     public static void menu() {
-        Scanner input = new Scanner(System.in);
         try {
 
             System.out.println("--** Welcome **--");
