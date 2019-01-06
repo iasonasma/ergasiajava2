@@ -1,29 +1,33 @@
-import java.util.Scanner;
+package database;
 
+import java.util.Scanner;
+/**
+ * class search values.
+ * */
 public class SearchValue {
 
-	static Scanner input = new Scanner(System.in);
+  /**
+   * searching values.
+   * */
 
-	public static void searchValue() {
+    public static void searchValue() {
+        Scanner input = new Scanner(System.in);
+        if (!CreateData.getValues().isEmpty()) {
 
-		if(!CreateData.values.isEmpty()) {
+            System.out.println("Give me the value you want to find:");
+            String value = input.next();
 
-			System.out.println("Give me the value you want to find:");
-			String value = input.next();
-			boolean boo = false;
-
-			for(int i = 0; i < CreateData.values.size(); i++) {
-				for(int j = 0; j < CreateData.values.get(i).size(); j++) {
-					if((CreateData.values.get(i).get(j)).equals(value)) {
-						boo = true;
-						int id = input.nextInt();
-						System.out.println("ID:" + id + " and values are: " + CreateData.values.get(i));
-						System.out.println();
-					}
-				}
-			}
-		}
-		System.out.println();
-		Database.menu();
-	}
+            for (int i = 0; i < CreateData.getValues().size(); i++) {
+                for (int j = 0; j < CreateData.getValues().get(i).size(); j++) {
+                    if ((CreateData.getValues().get(i).get(j)).equals(value)) {
+                        System.out.println("ID:" + i + " and values are: "
+                                + CreateData.getValues().get(i));
+                        System.out.println();
+                    }
+                }
+            }
+        }
+        System.out.println();
+        Database.menu();
+    }
 }
