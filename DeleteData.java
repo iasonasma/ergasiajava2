@@ -103,7 +103,8 @@ public class DeleteData {
 	}
 
 	public static void deleteDatabase() {
-		 CreateData.getValues().clear();
+		CreateData.getValues().clear();
+		CreateData.setCounter(0);
 		System.out.println("The whole database is now deleted");
 		System.out.println("The only thing left are your attribute names: ");
 		Datas.printData();
