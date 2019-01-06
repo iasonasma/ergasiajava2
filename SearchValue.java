@@ -23,6 +23,8 @@ public class SearchValue {
                         System.out.println("ID:" + i + " and values are: "
                                 + CreateData.getValues().get(i));
                         System.out.println();
+                    } else {
+                    	System.out.println("The value " +value+ " does not exist.");
                     }
                 }
             }
