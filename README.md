@@ -76,4 +76,5 @@ Update CreateData.java : setters/getters(static because of the static variables)
 Update Fields.java: getterss/setters for private variables: fields,field_name,fieldscounter
 Create package-info.java που περιέρχει πληροφοριες για το προγραμμα μας.
 
+-> iasonasma -> καποιες μικρο αλλαγες στο DeleteData για να λειτουργει με τους getters
 
