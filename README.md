@@ -80,4 +80,4 @@ Create package-info.java που περιέρχει πληροφοριες για
 
 -> nefeli-v -> Class SearchValue: add code on if...else block in case the value doesn't exist.
                Class SearchDatas: add InputMismatchException
-
+               Class DeleteData: set counter 0 when database is deleted
