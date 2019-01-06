@@ -9,11 +9,11 @@ public class SearchDatas {
 		if (!CreateData.values.isEmpty()) {
 
 			System.out.println("Give me the ID of the form you want to find:");
-			String id = input.next();
+			int id = input.nextInt();
 
 			for(int i = 0; i < CreateData.values.size(); i++) {
-				if(Integer.toString(i).equals(id)) {
-					System.out.println("The value is:" + CreateData.values.get(Integer.toString(i)));
+				if(i == id) {
+					System.out.println("The value is:" + CreateData.values.get(i));
 				}
 			}
 		}
