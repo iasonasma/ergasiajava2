@@ -13,11 +13,11 @@ public class SearchValue {
 			boolean boo = false;
 
 			for(int i = 0; i < CreateData.values.size(); i++) {
-				for(int j = 0; j < CreateData.values.get(Integer.toString(i)).size(); j++) {
-					if((CreateData.values.get(Integer.toString(i)).get(j)).equals(value)) {
+				for(int j = 0; j < CreateData.values.get(i).size(); j++) {
+					if((CreateData.values.get(i).get(j)).equals(value)) {
 						boo = true;
-						String  id = Integer.toString(i);
-						System.out.println("ID:" + id + " and values are: " + CreateData.values.get(Integer.toString(i)));
+						int id = input.nextInt();
+						System.out.println("ID:" + id + " and values are: " + CreateData.values.get(i));
 						System.out.println();
 					}
 				}
