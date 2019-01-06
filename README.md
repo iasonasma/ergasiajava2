@@ -71,3 +71,9 @@ Aggeliki92 -> Διόρθωση κώδικα SearchValue.java ώστε να επ�
 Aggeliki92 -> Διόρθωση κώδικα SearchData.java για μετατροπή του ID.
 iasonasma -> αλλαγη Database ωστε να βλεπει αν υπαρχει το αρχειο datas.txt και αλλαγη στον κωδικα SearchValue για να μπορει να λειτουργησει με String στοιχεια.Διορθωση DeleteData για να λειτουργει με τυπου String
 
+---06/1/2019--- stef-06 -> checkstyle σε όλες τις κλασεις μικροαλλαγές διότι προστέθηκαν private μεταβλητες.Συγκεκριμένα:
+Update CreateData.java : setters/getters(static because of the static variables)
+Update Fields.java: getterss/setters for private variables: fields,field_name,fieldscounter
+Create package-info.java που περιέρχει πληροφοριες για το προγραμμα μας.
+
+
