@@ -1,12 +1,14 @@
 package database;
 
+
+
 import java.io.BufferedReader;
 import java.io.PrintWriter;
 import java.io.FileReader;
 import java.io.File;
 import java.util.ArrayList;
 import java.util.List;
-
+import java.util.Scanner;
 /**
  * loads and writes database.
  * */
@@ -14,17 +16,26 @@ public class Write {
     /**
      * load database from a text file.
      **/
+     static Scanner input = new Scanner(System.in);
     public static void writes() {
 
+	System.out.println("Give me the file name of the database");
         try {
 
-            BufferedReader sc = new BufferedReader(new FileReader("datas.txt"));
-
+			String fileinput = input.next();
+			if(fileinput.equals("cancel"))
+			{
+				return;
+			}
+			File f = new File(fileinput + ".txt");
+            BufferedReader sc = new BufferedReader(new FileReader(fileinput + ".txt"));
+			if(!(f.exists()))
+			{
+				throw new Exception();
+			}
             String line;
             while ((line = sc.readLine()) != null) {
-                if (!line.trim().equals("")) {
                     List<String> valuedata = new ArrayList<String>();
-
                     String again;
                     if (line.toLowerCase().contains("fields")) {
                         again = line.split("=")[1].trim();
@@ -43,14 +54,19 @@ public class Write {
                         }
                         CreateData.getValues().put(CreateData.getCounter(), valuedata);
                         CreateData.setCounter(CreateData.getCounter() + 1);
+
                     }
                 }
-            }
+
+
 
 
         } catch (Exception e) {
-        }
+			System.out.println("File cannot be found.If you want to stop, type cancel");
+			writes();
 
+        }
+   System.out.println("Loaded!");
     }
 
     /**
@@ -58,7 +74,9 @@ public class Write {
      **/
     public static void writedata() {
         try {
-            PrintWriter pr = new PrintWriter(new File("datas.txt"));
+			System.out.println("Give me the name of the file you wanna to save it");
+			String files = input.next();
+            PrintWriter pr = new PrintWriter(new File((files + ".txt")));
             pr.print("fields=");
             for (int i = 0; i < Fields.getFields().size(); i++) {
                 pr.print(Fields.getFields().get(i) + ",");
@@ -73,6 +91,7 @@ public class Write {
 
                 pr.println();
             });
+            System.out.println("File saved!");
             pr.close();
         } catch (Exception e) {
             System.err.println(e);
