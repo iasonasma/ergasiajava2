@@ -8,42 +8,17 @@ import java.io.File;
  * provides the main method
  */
 public class Database {
-    /**
-     * load class.
-     * user choose if he/she
-     * wants to upload
-     * existing fields
-     */
+
 
     static  Scanner input = new Scanner(System.in);
 
-    private static void load() {
-        String inputs = input.nextLine();
-        if (inputs.equals("yes")) {
-            Write.writes();
-            menu();
-        } else if(inputs.equals("no")){
-            menu();
-        }else {
-			System.out.println("Please answer with a yes or a no");
-			load();
-			input.next();
-		}
-    }
 
     /**
-     * main method of database package.
+     * main method of databa2 se package.
      *
      * @param args
      */
 	public static void main(String[] args) {
-
-		File f = new File("datas.txt");
-		if(f.exists() && !f.isDirectory()) {
-			System.out.println("A Database has been found.Wanna to upload?");
-		    load();
-		}
-		else
 			menu();
 	}
 
@@ -63,7 +38,8 @@ public class Database {
             System.out.println("5. Change data");
             System.out.println("6. Search data");
             System.out.println("7. Search value");
-            System.out.println("8. Save data");
+            System.out.println("8. Load database");
+            System.out.println("9. Save data");
 
             int choice = input.nextInt();
             input.nextLine();
@@ -90,9 +66,11 @@ public class Database {
                 SearchValue.searchValue();
 
             } else if (choice == 8) {
-                Write.writedata();
+                Write.writes();
+            } else if (choice == 9) {
+            	Write.writedata();
 
-            } else {
+            }else {
                 System.out.println("Wrong choice.Please try again");
                 menu();
             }
