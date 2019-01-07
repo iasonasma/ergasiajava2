@@ -58,15 +58,13 @@ public class Write {
                     }
                 }
 
-
-
-
+ 	  System.out.println("Loaded!");	
         } catch (Exception e) {
 			System.out.println("File cannot be found.If you want to stop, type cancel");
 			writes();
 
         }
-   System.out.println("Loaded!");
+
     }
 
     /**
