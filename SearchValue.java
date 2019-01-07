@@ -24,7 +24,7 @@ public class SearchValue {
                                 + CreateData.getValues().get(i));
                         System.out.println();
                     } else {
-                    	System.out.println("The value " +value+ " does not exist.");
+                    	System.out.println("The value " + value + " does not exist.");
                     }
                 }
             }
