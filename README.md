@@ -84,3 +84,5 @@ Create package-info.java που περιέρχει πληροφοριες για
 
 ---07/1/2019--- 
 iasonasma -> Αλλαγη Write.java(πλεον ο χρηστης μπορει να αποθηκευση τη βαση με οποιοδηποτε ονομα θελει και οσες φορες θελει) και Database.java
+
+sindy-98 -> τελικό maven project με αρχεία source, tests , pom.xml και jar αρχειο 
