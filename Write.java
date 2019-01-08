@@ -72,7 +72,7 @@ public class Write {
 	Scanner input = new Scanner(System.in);
 
         try {
-            System.out.println("Give me the name of the file you wanna to save it");
+            System.out.println("Give me the name of the file you want to save ");
             String files = input.next();
             PrintWriter pr = new PrintWriter(new File((files + ".txt")));
             pr.print("fields=");
