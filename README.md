@@ -86,3 +86,6 @@ Create package-info.java που περιέρχει πληροφοριες για
 iasonasma -> Αλλαγη Write.java(πλεον ο χρηστης μπορει να αποθηκευση τη βαση με οποιοδηποτε ονομα θελει και οσες φορες θελει) και Database.java
 
 sindy-98 -> τελικό maven project με αρχεία source, tests , pom.xml και jar αρχειο 
+
+---08/1/2019---
+iasonasma-> αλλαγη στο SearchValue.java,υπαρξη προβλήματος στο να μην υπάρχει το value.
