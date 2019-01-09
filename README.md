@@ -94,3 +94,6 @@ iasonasma-> αλλαγη στο SearchValue.java,υπαρξη προβλήματ
 --09/1/2019--
 sindy-98-> αλλαγή στο DeleteData.java για να διαγραφτεί και το τελευταίο πράγμα που έμεινβε δηλαδή τ αονοματα των Fields.Επιπλέον μέθοδος 
 deleteFieldNames().
+
+--08/1/2019--
+iasonasma-> Pushed Maven Project to branch 'master'
