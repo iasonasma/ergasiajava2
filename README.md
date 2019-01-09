@@ -89,3 +89,7 @@ sindy-98 -> τελικό maven project με αρχεία source, tests , pom.xml
 
 ---08/1/2019---
 iasonasma-> αλλαγη στο SearchValue.java,υπαρξη προβλήματος στο να μην υπάρχει το value.
+
+--09/1/2019--
+sindy-98-> αλλαγή στο DeleteData.java για να διαγραφτεί και το τελευταίο πράγμα που έμεινβε δηλαδή τ αονοματα των Fields.Επιπλέον μέθοδος 
+deleteFieldNames().
