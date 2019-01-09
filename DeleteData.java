@@ -105,11 +105,22 @@ public class DeleteData {
 	public static void deleteDatabase() {
 		CreateData.getValues().clear();
 		CreateData.setCounter(0);
-		System.out.println("The whole database is now deleted");
-		System.out.println("The only thing left are your attribute names: ");
-		Datas.printData();
+		System.out.println("Do you want to delete also the remaining field names? Type: also ");
+		String choice2 = input.next();
+		if(choice2.equals("also")){
+			deleteFieldNames();
+		} else {
+			System.out.println("The whole database is now deleted");
+			System.out.println("The only thing left are your attribute names: ");
+			Datas.printData();
+		}
+	}
+	public static void deleteFieldNames() {
+		Fields.getFields().clear();
+		Fields.setFieldscounter(0);
+		System.out.println("You just managed to destroy all your database information!");
 		Database.menu();
 	}
-
 }
+
 
