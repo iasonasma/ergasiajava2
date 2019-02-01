@@ -97,3 +97,5 @@ deleteFieldNames().
 
 --08/1/2019--
 iasonasma-> Pushed Maven Project to branch 'master'
+
+Για δοκιμη του project με jar αρχειο,πηγαιντε στο branch master οπου το σχετικο README υπαρχει.
